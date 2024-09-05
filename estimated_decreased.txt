@@ -1,0 +1,10 @@
+### How I reduced the estimate to $6,500
+
+Below is the list of changes and reasons for the solution:
+
+- `Changed`: Scaled down to lower configuration EC2 instance type`(t2.xlarge -> t2.large)`.
+    - **Reason**: Changing the EC2 instance configuration can effect the performance for a little bit but instances can be auto scaled if and when needed.
+- `Changed`: Changed pricing from on-demand to reserved instances.
+    - **Reason**: Reserving instances for 1 year will reduce the cost for the architecture. But it will lock the application platform to use the same infrastrcuture for one year. Although more resources can be added any time if and when needed.
+- `Changed`: Scaled down RDS instance from `db.m5.4xlarge to db.m5.2xlarge`.
+    - **Reason**: Scaling down will have the database performance issue but it can be bearable according to the application requirements.
