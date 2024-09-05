@@ -3,8 +3,8 @@
 Below is the list of changes and reasons for the solution:
 
 - `Changed`: Added more EC2 instances and load balancer.
-    - **Reason**: This will provide high availability for the application. Even if `Northern Virginia` region is completely down, application will be up and running in `Ohio` region.
-- `Changed`: Added RDS database instance in `Ohio` region.
-    - **Reason**: This will reduce the latency for users accessing application in other region. Because data can be fetched from `Ohio` region read replica RDS database instance.
+    - **Reason**: This will provide high availability for the application. Even if `Northern Virginia` region is completely down, application will be up and running in `Oregon` region.
+- `Changed`: Added RDS database instance in `Oregon` region.
+    - **Reason**: This will reduce the latency for users accessing application in other region. Because data can be fetched from `Oregon` region read replica RDS database instance.
 - `Changed`: Scaled up RDS database instances.
     - **Reason**: This will improve the database performance and will be more effecting in case of huge traffic on application platform.
